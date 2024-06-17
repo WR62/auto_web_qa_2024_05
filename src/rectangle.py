@@ -8,8 +8,10 @@ class Rectangle(Figure):
         self.side_a = length
         self.side_b = width
 
+    @property
     def get_area(self):
         return self.side_a * self.side_b
 
+    @property
     def get_perimeter(self):
         return (self.side_a + self.side_b) * 2

@@ -8,8 +8,10 @@ class Circle(Figure):
             raise ValueError("Radius can't be negative value")
         self.radius = radius
 
+    @property
     def get_perimeter(self):
         return 2 * self.radius * math.pi
 
+    @property
     def get_area(self):
         return math.pi * self.radius * self.radius
